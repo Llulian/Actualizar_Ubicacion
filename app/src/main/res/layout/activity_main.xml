@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/container"
+    android:background="#2980B9">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar"
+        android:id="@+id/iniciar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="startUpdatesButtonHandler"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parar"
+        android:id="@+id/parar"
+
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="stopUpdatesButtonHandler" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="longitud"
+        android:id="@+id/longitudR"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/latitudR"
+        android:layout_toRightOf="@+id/iniciar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="latitud"
+        android:id="@+id/latitudR"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/tiempo"
+        android:layout_alignLeft="@+id/tiempo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tiempo"
+        android:id="@+id/tiempo"
+        android:layout_alignBottom="@+id/iniciar"
+        android:layout_alignRight="@+id/longitudR" />
+</RelativeLayout>
